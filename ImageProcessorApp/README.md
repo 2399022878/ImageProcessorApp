@@ -9,16 +9,24 @@ git流命令行记录
 - 关联你在github上创建的仓库
 
 ```
-git remote add origin https://github.com/Linda/ImageProcessorApp.git
+git remote add origin https://github.com/2399022878/ImageProcessorApp.git
 ```
 
 - 提交代码到github
 
 ```
-git add .  # 添加所有文件到暂存区
-git commit -m "Initial commit: setup project environment"  # 提交到本地仓库
-git branch -M main  # 重命名默认分支为 main（可选）
-git push -u origin main  # 推送到 GitHub
+# 初始化本地仓库（如果尚未初始化）
+git init
+
+# 添加文件并提交
+git add .
+git commit -m "Initial commit"
+
+# 关联远程仓库（首次）
+git remote add origin https://github.com/2399022878/ImageProcessorApp.git
+
+# 推送到远程
+git push -u origin main
 ```
 
 - 或者vscode里点source control图标（ctrl+shift+g）,勾选文件并输入提交信息
