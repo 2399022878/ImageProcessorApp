@@ -1,0 +1,32 @@
+# Python 通用忽略
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境（根据你的实际环境名调整）
+env/           # 如果你用 `python -m venv env` 创建的环境
+
+# 环境变量和敏感文件
+.env
+*.env
+secrets.yml
+
+# 系统文件
+.DS_Store      # macOS（虽然 Windows 不需要，但保留以防跨平台协作）
+Thumbs.db      # Windows 缩略图缓存
+Desktop.ini    # Windows 文件夹自定义设置
+
+# IDE 和编辑器配置
+.vscode/       # VSCode 配置
+.idea/         # PyCharm 配置
+*.swp          # Vim 临时文件
+*.sublime-*    # Sublime Text 临时文件
+
+# 其他
+*.log
+*.bak
+*.tmp
